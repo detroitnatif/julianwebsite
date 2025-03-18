@@ -1,6 +1,6 @@
-# Tyler Klimas's Portfolio Website
+# julian seinfeld's Portfolio Website
 
-Hello, I'm Tyler Klimas and this is my portfolio! I'm a Computer Science and French double major at Duke University who likes to solve problems. My coding experience ranges from programming orbital mechanics problems to machine learning.
+Hello, I'm julian seinfeld and this is my portfolio! I'm a Computer Science and French double major at Duke University who likes to solve problems. My coding experience ranges from programming orbital mechanics problems to machine learning.
 
 ## Languages
 
