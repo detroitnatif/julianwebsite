@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <title>Tyler's Experience</title>
+    <head>
+        <link rel="icon" type="image/png" href="../imgs/world-wide-web.png"/>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/navMenu.css">
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); /* Reduced min width to 200px */
+                gap: 10px; /* Adjusts space between items */
+                margin: 1%;
+
+            }
+
+            .grid-item {
+                background-color: #ffffff;
+                padding: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+            }
+            .grid-item, .edu {
+    color: #000000; /* This ensures the text stays black */
+}
+
+body.dark-mode .grid-item, 
+body.dark-mode .edu {
+    color: #000000 !important; /* Forces text color to stay black in dark mode */
+}
+
+            .edu {
+                padding: 5px 0; /* Reduced padding */
+            }
+
+            @media (max-width: 300px) {
+                .grid-container {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <div id="pancakeMenu" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../index.html" class="tilt-right">Home</a>
+            <a href="about.html" class="tilt-right">About</a>
+            <a href="blog.html" class="tilt-left">Writings</a>
+            <a href="projects.html" class="flip-horizontal">Projects</a>
+            <!-- <a href="TylerKlimasResume.pdf" target="_blank" class="rotate-full">CV</a> -->
+            <a href="contact.html" class="no-transform">Contact</a>
+          </div>          
+    </div>
+    <body>
+        <span style="font-size:30px;cursor:url('../cursors/CursorsXP.cur'), auto;" onclick="openNav()">&#9776;</span>
+        <span style="float: right;" onclick="dark()"><img id="icon" style="height: 20px; width: 20px;cursor:url('../cursors/CursorsXP.cur'), auto;" src="imgs/moon.png"></span>
+        <h1>Experience</h1>
+        <div class="edu">
+            
+        <h2>Education</h2>
+        <div class="grid-item" style="padding: 0; box-shadow: none; border-radius: 4px;">
+        
+        
+            <br>
+            <h3 style="text-align: center;">Undergrad: Computer Science & French</h3>
+            <h4>Duke University</h4>
+            <p>2021 - Present</p><br>
+        </div>
+    </div>
+        <div class="jobs">
+            <br>
+            <h2>Jobs</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="edu">
+                        <h3 style="text-align: center; margin-bottom: 48px;">Software Engineer @ Validity.id</h3>
+                        <h4 style="text-align: center;">Chicago, IL</h4>
+                        <h4 style="text-align: center;">May 2024 - July 2024</h4>
+                        <p style="text-align: center;">
+                            <ul>
+                                <li>Validity.id is a digital credential service leveraging blockchain to verify degrees.</li>
+                                <li>Designed AI course finder leveraging HuggingFace, OpenAI, and RAG</li>
+                                <li>Aided and assisted in design of Validity.id service</li>
+                            </ul> 
+                        </p><br>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="edu">
+                        <h3 style="text-align: center; margin-bottom: 46px;">Business Development Intern @ Founder's Table</h3>
+                        <h4 style="text-align: center;">New York, NY</h4>
+                        <h4 style="text-align: center;">Jul 2023 - Sep 2023</h4>
+                        <p style="text-align: center;">
+                            <ul>
+                                <li>Beta tested and worked alongside the software engineering team to develop new generation software to upload quality control checks automatically.</li>
+                                <li>Learned the entire business model ranging from operations, supply chain management to accounting.</li>
+                                <li>Interacted with suppliers to manage contracts to combat inflation and its impact on COGS.</li>
+                            </ul> 
+                        </p><br>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="edu" style="margin-top: -20px;">
+                        <br>
+                        <h3 style="text-align: center;">Quantitative Analyst Intern @ Kiski Financial Group</h3>
+                        <h4 style="text-align: center;">New York, NY</h4>
+                        <h4 style="text-align: center;">Jul 2022 - Oct 2022</h4>
+                        <p style="text-align: center;">
+                            <ul>
+                                <li>Responsible for the creation and development of financial reports (Correlation matrices, portfolio dispersions, etc)</li>
+                                <li>Interacted with company databases using SQL to utilize PowerBI and Tableau tooling. </li>
+                                <li>Designed and built software using React.js and PowerBI to create a new generation client view.</li>
+                            </ul> 
+                        </p><br>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="edu">
+                        <br>
+                        <h3 style="text-align: center;">Software Engineer Intern @ Duke Office of Information and Technology</h3>
+                        <h4 style="text-align: center;">May 2022 - Jul 2022</h4>
+                        <p>
+                            <ul>
+                                <li>Developed and deployed Duke FixIt, interactive web application which allows staff and students to conveniently report issues in their dorm, classroom, etc. </li>
+                                <li>Interfaced with Facilities Management to create a system which seamlessly integrated with their existing systems and workflows.</li>
+                                <li>Utilized Ruby on Rails (Backend), React.js (Frontend), Docker, and Kubernetes.  </li>
+                            </ul> 
+                        </p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </body>
+    <script defer src="../javascript/main.js"></script>
+    <script defer src="../javascript/navMenu.js"></script>
+</html>

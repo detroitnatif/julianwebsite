@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <title>About Me</title>
+    <head>
+        <link rel="icon" type="image/png" href="../imgs/world-wide-web.png"/>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/navMenu.css">
+    </head>
+    <div id="pancakeMenu" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../index.html" class="tilt-right">Home</a>
+            <a href="blog.html" class="tilt-left">Writings</a>
+            <a href="Experience.html" class="flip-vertical">Experience</a>
+            <a href="projects.html" class="flip-horizontal">Projects</a>
+            <!-- <a href="TylerKlimasResume.pdf" target="_blank" class="rotate-full">CV</a> -->
+            <a href="contact.html" class="no-transform">Contact</a>
+          </div>          
+    </div>
+    <body>
+        <span style="font-size:30px;cursor:url('../cursors/CursorsXP.cur'), auto;" onclick="openNav()">&#9776;</span>
+        <span style="float: right;" onclick="dark()"><img id="icon" style="height: 20px; width: 20px;cursor:url('../cursors/CursorsXP.cur'), auto;" src="imgs/moon.png"></span>
+        <h1>About Me</h1>
+        <p>
+            <div id="parent">
+                <div id="picOfMe" style="padding-right: 50px;">
+                    <img src="../imgs/trunks.png" alt="me" style="float:right;height:500px;">
+                </div>
+                <div id="parag" style="margin-left: 10px;">
+                    <br/>
+                    <p>
+                    Hi, I'm Tyler and I am a highly skilled and innovative student with a love of learning. 
+                    I thrive in collaborative environments, leveraging my exceptional problem-solving abilities to design and implement high-quality software.
+                    With a few years of professional experience and almost a decade of hobbyist experience,
+                    I am committed to delivering cutting-edge solutions that address complex challenges.
+                    </p>
+                    <ul>
+                        <li>Birthday: 2/22/2003 (Pisces)</li>
+                        <li>Phone: +1 two48 795 4554</li>
+                        <li>Home: Detroit, MI </li>
+                        <li>Based: Durham, NC </li>
+                        <li>Email: tyler dot klimas@duke.edu</li>
+                    </ul> 
+                    <h2>Interests</h2>
+                    <ul>
+                        <li>Computer Vision</li>
+                        <li>Bitcoin and Distributed Computing</li>
+                        <li>GenerativeAI</li>
+                        <li>French Literature</li>
+                        <li>Poker</li>
+                        <li>Outdoors</li>
+                    </ul> 
+                </div>
+            </div>
+        </p>
+        <script defer src="../javascript/main.js"></script>
+        <script defer src="../javascript/navMenu.js"></script>
+    </body>
+</html>

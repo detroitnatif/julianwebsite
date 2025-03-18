@@ -1,0 +1,99 @@
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(83, 83, 83, 0.9);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #adadad;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* .overlay a:hover, .overlay a:focus {
+    color: #ffffff;
+    transform: rotate(2deg);
+    
+
+  } */
+  .overlay-content .tilt-right:hover {
+
+    transform: translateX(-2px) translateY(4px);
+    color: white;
+    
+  }
+  
+  .overlay-content .tilt-left:hover {
+    transform: translateX(-2px) translateY(4px);
+    color: white;
+  }
+  
+  .overlay-content .flip-vertical:hover {
+    transform: translateX(-2px) translateY(4px);
+    color: white;
+  }
+  
+  .overlay-content .flip-horizontal:hover {
+    transform: translateX(-2px) translateY(4px);
+    color: white;
+  }
+  
+  .overlay-content .rotate-full:hover {
+    transform: translateX(-2px) translateY(4px);
+    color: white;
+  }
+  
+  .overlay-content .no-transform:hover {
+    transform: translateX(-2px) translateY(4px);
+    color: white;
+  }
+  
+  
+  
+  .overlay .closebtn {
+    cursor: url("../cursors/CursorsXP.cur"), auto;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+
+  #pancakeMenu .menu-icon {
+    width: 100px; /* Increase width */
+    height: 100px; /* Increase height */
+}
+
+/* Styling for the lines/bars of the pancake menu icon */
+#pancakeMenu .menu-icon .bar {
+    width: 80%; /* Adjust the width of the lines */
+    height: 4px; /* Adjust the height of the lines */
+    background-color: #333; /* Color of the lines */
+    margin: 6px auto; /* Adjust the spacing between the lines */
+}

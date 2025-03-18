@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <title>Tyler's Works</title>
+    <head>
+        <link rel="icon" type="image/png" href="../imgs/world-wide-web.png"/>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/navMenu.css">
+    </head>
+    <div id="pancakeMenu" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../index.html" class="tilt-right">Home</a>
+            <a href="about.html" class="tilt-right">About</a>
+            <a href="blog.html" class="tilt-left">Writings</a>
+            <a href="Experience.html" class="flip-vertical">Experience</a>
+            <!-- <a href="TylerKlimasResume.pdf" target="_blank" class="rotate-full">CV</a> -->
+            <a href="contact.html" class="no-transform">Contact</a>
+          </div>          
+    </div>
+    <body>
+        <span style="font-size:30px;cursor:url('../cursors/CursorsXP.cur'), auto;" onclick="openNav()">&#9776;</span>
+        <span style="float: right;" onclick="dark()">
+            <img id="icon" style="height: 20px; width: 20px;cursor:url('../cursors/CursorsXP.cur'), auto;" src="imgs/moon.png">
+        </span>
+        <h1>Projects</h1>
+        <div class="content-container-all" style="text-align: center;">
+            <div class="content-container" style="margin: 0 auto;">
+                <div class="projs">
+                    <div class="projs1">
+                        <div class="learn2cook" style="width: 300px; padding: 10px;">
+                            <h2>Learn2Cook</h2>
+                            <p>OpenAI text-to-video generation</p>
+                            <ul>
+                                <li>Details: </li>
+                                <ul>
+                                    <li>GPT3.5, Stable Diffusion, and Whisper to generate content</li>
+                                    <li>FFMPEG and CV2 video creation</li>
+                                    <li>Building video diffusion model integration</li>
+                                    <li>Learn a recipe or two!</li>
+                                </ul>
+                                <li><a href="https://github.com/detroitnatif/Text-to-Video/tree/main/videoCreation" target="_blank">GitHub</a></li>
+                                <li><a href="https://learn2cook.streamlit.app" target="_blank">Demo</a></li>
+                            </ul> 
+                        </div>
+                    </div>
+                    <div class="projs1">
+                        <div class="learn2cook" style="width: 300px; padding: 10px;">
+                            <h2>YOLO Object Detection</h2>
+                            <p>Using Drone Imagery to study habitats in the Outer Banks</p>
+                            <ul>
+                                <li>Details: </li>
+                                <ul>
+                                    <li>Programmed DJI Matrice 350 RTK to fly automonous missions. </li>
+                                    <li>Utilized Pix4D to create photogrammetry structure models.</li>
+                                    <li>Labeled habitat species using Roboflow</li>
+                                    <li>Finetuned YOLOv8 to classify fauna</li>
+                                </ul>
+                            </ul> 
+                        </div>
+                    </div>
+                    <div class="projs1">
+                        <div class="LakeshoreAI" style="width: 300px; padding: 10px;">
+                            <h2>LakeshoreAI</h2>
+                            <p>Automotive Agent trained to aid car Mechanics</p>
+                            <ul>
+                                <li>Details: </li>
+                                <ul>
+                                    <li>Enabled by a finetuned GPT assisstant</li>
+                                    <li>Webscraping Automotive Forums</li>
+                                    <li>Transcribing YouTube videos for tutorials</li>
+                                    <li>Inspired by my father, who owned an automotive shop, Lakeshore Tire & Auto, for 38 years</li>
+                                </ul>
+                                <li><a href="https://github.com/detroitnatif/LakeshoreAI" target="_blank">GitHub</a></li>
+                                <li><a href="https://lakeshoreai.streamlit.app" target="_blank">Demo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="projs1">
+                        <div class="LLM-Transformer" style="width: 300px; padding: 10px;">
+                            <h2>Transformer</h2>
+                            <p>Building a transformer from bare bones</p>
+                            <ul>
+                                <li>Details: </li>
+                                <ul>
+                                    <li>Neural Network implemented in vanilla Python</li>
+                                    <li>Begin with basic MLP (multi-layer perceptron)</li>
+                                    <li>Built out normalization, non-linearitly, and transformation layers</li>
+                                    <li>implemented backpropogation algorithm</li>
+                                    <li>Trained on a portion of Wikipedia!</li>
+                                </ul>
+                                <li><a href="https://github.com/detroitnatif/LLM-V1" target="_blank">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="img-container">
+                    <img src="../imgs/pokemontrainer.webp" alt="me" style="height:500px;">
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <script defer src="../javascript/main.js"></script>
+    <script defer src="../javascript/navMenu.js"></script>
+</html>
+
+<!-- 
+<body>
+       
+    <span style="font-size:30px;cursor:url('../cursors/CursorsXP.cur'), auto;" onclick="openNav()">&#9776;</span>
+    <span style="float: right;" onclick="dark()"><img id="icon" style="height: 20px; width: 20px;cursor:url('../cursors/CursorsXP.cur'), auto;" src="imgs/moon.png"></span>
+    <h1>Projects</h1>
+    <div class="content-container">
+
+  
+    <div class="projs1">
+        <div class="learn2cook" style="width: 300;padding: 10px;">
+            <h2>Learn2Cook</h2>
+            <p>OpenAI text-to-video generation</p>
+            <ul>
+                <li>Details: </li>
+                <ul>
+                    <li>GPT3.5, Stable Diffusion, and Whisper to generate content</li>
+                    <li>FFMPEG and CV2 video creation</li>
+                    <li>Building video diffusion model integration</li>
+                    <li>Learn a recipe or two!</li>
+                </ul>
+                <li><a href="https://github.com/detroitnatif/Text-to-Video/tree/main/videoCreation" target="_blank">GitHub</a></li>
+                <li><a href="https://learn2cook.streamlit.app" target="_blank">Demo</a></li>
+            </ul> 
+        </div>
+    </div>
+    <div class="projs1">
+        <div class="LakeshoreAI" style="width: 300;padding: 10px;">
+            <h2>LakeshoreAI</h2>
+            <p>Automotive Agent trained to aid car Mechanics</p>
+            <ul>
+                <li>Details: </li>
+                <ul>
+                    <li>Enabled by a finetuned GPT assisstant</li>
+                    <li>Webscraping Automotive Forums</li>
+                    <li>Transcribing YouTube videos for tutorials</li>
+                    <li>Inspired by my father, who owned an automotive shop, Lakeshore Tire & Auto, for 38 years</li>
+                </ul>
+                <li><a href="https://github.com/detroitnatif/LakeshoreAI" target="_blank">GitHub</a></li>
+                <li><a href="https://lakeshoreai.streamlit.app" target="_blank">Demo</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="projs1">
+        <div class="LLM-Transformer" style="width: 300;padding: 10px;">
+            <h2>Transformer</h2>
+            <p>Building a transformer from bare bones</p>
+            <ul>
+                <li>Details: </li>
+                <ul>
+                    <li>Neural Network implemented in vanilla Python</li>
+                    <li>Begin with basic MLP (multi-layer perceptron)</li>
+                    <li>Built out normalization, non-linearitly, and transformation layers</li>
+                    <li>implemented backpropogation algorithm</li>
+                    <li>Trained on a portion of Wikipedia!</li>
+                </ul>
+                <li><a href="https://github.com/detroitnatif/LLM-V1" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+        <div id="img-container" style="padding-right: 0px;">
+            <img src="../imgs/pokemontrainer.webp" alt="me" style="height:500px;">
+        </div>
+    </div>
+    </div>
+</body>
+<script defer src="../javascript/main.js"></script>
+<script defer src="../javascript/navMenu.js"></script>
+</html> -->
