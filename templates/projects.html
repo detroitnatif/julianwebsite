@@ -1,102 +1,169 @@
 <!DOCTYPE html>
 <html>
+  <head>
     <title>Julian's Works</title>
-    <head>
-        <link rel="icon" type="image/png" href="../imgs/world-wide-web.png"/>
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/navMenu.css">
-    </head>
+    <link rel="icon" type="image/png" href="../imgs/world-wide-web.png"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navMenu.css">
+    <style>
+      /* Example styling for the project containers */
+      .project-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 20px auto;
+        max-width: 800px;
+      }
+      
+      .project-details {
+        flex: 1;
+        margin-right: 20px;
+        text-align: left;
+      }
+
+      .project-details ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+      }
+
+      .project-image {
+        width: 250px;
+        min-width: 150px;
+      }
+
+      .project-image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px;
+      }
+
+      /* Optional: Style the overall container to center content */
+      .content-container-all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Existing styling for the nav overlay (unchanged) */
+      #pancakeMenu .overlay {
+        /* your existing nav menu styles here */
+      }
+      /* etc. */
+    </style>
+  </head>
+
+  <body>
     <div id="pancakeMenu" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="../index.html" class="tilt-right">Home</a>
-            <a href="about.html" class="tilt-right">About</a>
-            <!-- <a href="blog.html" class="tilt-left">Writings</a> -->
-            <a href="Experience.html" class="flip-vertical">Experience</a>
-            <a href="JulianSeinfeldResume.pdf" target="_blank" class="rotate-full">CV</a>
-            <a href="contact.html" class="no-transform">Contact</a>
-        </div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="../index.html" class="tilt-right">Home</a>
+        <a href="about.html" class="tilt-right">About</a>
+        <!-- <a href="blog.html" class="tilt-left">Writings</a> -->
+        <a href="Experience.html" class="flip-vertical">Experience</a>
+        <a href="JulianSeinfeldResume.pdf" target="_blank" class="rotate-full">CV</a>
+        <a href="contact.html" class="no-transform">Contact</a>
+      </div>
     </div>
-    <body>
-        <span style="font-size:30px;cursor:url('../cursors/CursorsXP.cur'), auto;" onclick="openNav()">&#9776;</span>
-        <span style="float: right;" onclick="dark()">
-            <img id="icon" style="height: 20px; width: 20px;cursor:url('../cursors/CursorsXP.cur'), auto;" src="imgs/moon.png">
-        </span>
 
-        <h1>Design Experience</h1>
+    <!-- Menu Icon and Dark Mode Toggle -->
+    <span style="font-size:30px;cursor:url('../cursors/CursorsXP.cur'), auto;" onclick="openNav()">&#9776;</span>
+    <span style="float: right;" onclick="dark()">
+      <img id="icon" style="height: 20px; width: 20px;cursor:url('../cursors/CursorsXP.cur'), auto;" src="imgs/moon.png">
+    </span>
 
-        <div class="content-container-all" style="text-align: center;">
-            <div class="content-container" style="margin: 0 auto;">
-                <!-- Design Experience from Document -->
-                <div class="projs">
-                    <!-- Warren Lotas x Kevin Durant -->
-                    <div class="projs1">
-                        <div style="width: 300px; padding: 10px;">
-                            <h3>Warren Lotas x Kevin Durant Capsule Collection</h3>
-                            <p>Released to the public on WL and Boardroom websites.</p>
-                            <ul>
-                                <li>Exclusive "Boardroom Jacket"</li>
-                                <ul>
-                                    <li>One-of-a-kind customized Kevin Durant "Boardroom Jacket"</li>
-                                    <li>Gifted and auctioned</li>
-                                </ul>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Boardroom Members Club Collection -->
-                    <div class="projs1">
-                        <div style="width: 300px; padding: 10px;">
-                            <h3>Boardroom Members Club Collection</h3>
-                            <ul>
-                                <li><strong>Pouches</strong>
-                                    <ul>
-                                        <li>Scheduled for release in May/June</li>
-                                        <li>Produced in four colors and gifted to members</li>
-                                        <li>Future plans for wholesale distribution</li>
-                                        <li>Collaborated with a commissioned designer; provided multiple rounds of feedback</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Journals</strong>
-                                    <ul>
-                                        <li>Scheduled for release in May/June</li>
-                                        <li>Produced in four colors and gifted to members</li>
-                                        <li>Collaborated with a designer; provided multiple rounds of feedback</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Cardholder</strong>
-                                    <ul>
-                                        <li>No longer being produced</li>
-                                        <li>Collaborated with and provided rounds of feedback to a commissioned designer</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Boardroom University Initiative -->
-                    <div class="projs1">
-                        <div style="width: 300px; padding: 10px;">
-                            <h3>Boardroom University Initiative</h3>
-                            <p>2022 project designed to grow brand presence on college campuses among students.</p>
-                        </div>
-                    </div>
-                    <!-- Logo Redesigns -->
-                    <div class="projs1">
-                        <div style="width: 300px; padding: 10px;">
-                            <h3>Logo Redesigns</h3>
-                            <ul>
-                                <li>Multiple iterations of wordmark designs developed since 2021</li>
-                                <li>Collaborated with a branding development designer to create updated logos</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <h1 style="text-align:center;">Design Experience</h1>
+
+    <div class="content-container-all">
+      <!-- 1. Warren Lotas x Kevin Durant Capsule Collection -->
+      <div class="project-container">
+        <div class="project-details">
+          <h3>Warren Lotas x Kevin Durant Capsule Collection</h3>
+          <p>Released to the public on WL and Boardroom websites.</p>
+          <ul>
+            <li>Exclusive "Boardroom Jacket"
+              <ul>
+                <li>One-of-a-kind customized Kevin Durant "Boardroom Jacket"</li>
+                <li>Gifted and auctioned</li>
+              </ul>
+            </li>
+          </ul>
         </div>
+        <!-- Replace the src below with your actual image path -->
+        <div class="project-image">
+          <img src="../imgs/placeholder.png" alt="Warren Lotas x Kevin Durant Capsule Collection"/>
+        </div>
+      </div>
 
-        <script defer src="../javascript/main.js"></script>
-        <script defer src="../javascript/navMenu.js"></script>
-    </body>
+      <!-- 2. Boardroom Members Club Collection -->
+      <div class="project-container">
+        <div class="project-details">
+          <h3>Boardroom Members Club Collection</h3>
+          <ul>
+            <li><strong>Pouches</strong>
+              <ul>
+                <li>Scheduled for release in May/June</li>
+                <li>Produced in four colors and gifted to members</li>
+                <li>Future plans for wholesale distribution</li>
+                <li>Collaborated with a commissioned designer; provided multiple rounds of feedback</li>
+              </ul>
+            </li>
+            <li><strong>Journals</strong>
+              <ul>
+                <li>Scheduled for release in May/June</li>
+                <li>Produced in four colors and gifted to members</li>
+                <li>Collaborated with a designer; provided multiple rounds of feedback</li>
+              </ul>
+            </li>
+            <li><strong>Cardholder</strong>
+              <ul>
+                <li>No longer being produced</li>
+                <li>Collaborated with and provided rounds of feedback to a commissioned designer</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- Replace the src below with your actual image path -->
+        <div class="project-image">
+          <img src="../imgs/placeholder.png" alt="Boardroom Members Club Collection"/>
+        </div>
+      </div>
+
+      <!-- 3. Boardroom University Initiative -->
+      <div class="project-container">
+        <div class="project-details">
+          <h3>Boardroom University Initiative</h3>
+          <p>2022 project designed to grow brand presence on college campuses among students.</p>
+        </div>
+        <div class="project-image">
+          <img src="../imgs/placeholder.png" alt="Boardroom University Initiative"/>
+        </div>
+      </div>
+
+      <!-- 4. Logo Redesigns -->
+      <div class="project-container">
+        <div class="project-details">
+          <h3>Logo Redesigns</h3>
+          <ul>
+            <li>Multiple iterations of wordmark designs developed since 2021</li>
+            <li>Collaborated with a branding development designer to create updated logos</li>
+          </ul>
+        </div>
+        <div class="project-image">
+          <img src="../imgs/placeholder.png" alt="Logo Redesigns"/>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="../javascript/main.js"></script>
+    <script defer src="../javascript/navMenu.js"></script>
+  </body>
 </html>
+
 
 <!-- 
 <body>
