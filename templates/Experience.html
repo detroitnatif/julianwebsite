@@ -8,10 +8,9 @@
         <style>
             .grid-container {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); /* Reduced min width to 200px */
-                gap: 10px; /* Adjusts space between items */
+                grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+                gap: 10px;
                 margin: 1%;
-
             }
 
             .grid-item {
@@ -20,17 +19,18 @@
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
                 border-radius: 10px;
             }
-            .grid-item, .edu {
-    color: #000000; /* This ensures the text stays black */
-}
 
-body.dark-mode .grid-item, 
-body.dark-mode .edu {
-    color: #000000 !important; /* Forces text color to stay black in dark mode */
-}
+            .grid-item, .edu {
+                color: #000000; /* Ensures the text stays black */
+            }
+
+            body.dark-mode .grid-item,
+            body.dark-mode .edu {
+                color: #000000 !important; /* Forces text color to stay black in dark mode */
+            }
 
             .edu {
-                padding: 5px 0; /* Reduced padding */
+                padding: 5px 0;
             }
 
             @media (max-width: 300px) {
@@ -49,90 +49,99 @@ body.dark-mode .edu {
             <a href="projects.html" class="flip-horizontal">Projects</a>
             <a href="JulianSeinfeldResume.pdf" target="_blank" class="rotate-full">CV</a>
             <a href="contact.html" class="no-transform">Contact</a>
-          </div>          
+        </div>          
     </div>
     <body>
         <span style="font-size:30px;cursor:url('../cursors/CursorsXP.cur'), auto;" onclick="openNav()">&#9776;</span>
-        <span style="float: right;" onclick="dark()"><img id="icon" style="height: 20px; width: 20px;cursor:url('../cursors/CursorsXP.cur'), auto;" src="imgs/moon.png"></span>
+        <span style="float: right;" onclick="dark()">
+            <img id="icon" style="height: 20px; width: 20px;cursor:url('../cursors/CursorsXP.cur'), auto;" src="imgs/moon.png">
+        </span>
         <h1>Experience</h1>
+
         <div class="edu">
-            
-        <h2>Education</h2>
-        <div class="grid-item" style="padding: 0; box-shadow: none; border-radius: 4px;">
-        
-        
-            <br>
-            <h3 style="text-align: center;">Undergrad: Computer Science & French</h3>
-            <h4>Duke University</h4>
-            <p>2021 - Present</p><br>
+            <h2>Education</h2>
+            <div class="grid-item" style="padding: 0; box-shadow: none; border-radius: 4px;">
+                <br>
+                <h3 style="text-align: center;">Undergrad: Computer Science & French</h3>
+                <h4>Duke University</h4>
+                <p>2021 - Present</p><br>
+            </div>
         </div>
-    </div>
+
         <div class="jobs">
             <br>
             <h2>Jobs</h2>
             <div class="grid-container">
+                <!-- 1st Experience -->
                 <div class="grid-item">
                     <div class="edu">
-                        <h3 style="text-align: center; margin-bottom: 48px;">Software Engineer @ Validity.id</h3>
-                        <h4 style="text-align: center;">Chicago, IL</h4>
-                        <h4 style="text-align: center;">May 2024 - July 2024</h4>
+                        <h3 style="text-align: center; margin-bottom: 48px;">Brand Development Intern @ 35 Ventures/Boardroom</h3>
+                        <h4 style="text-align: center;">May 2021 - Present</h4>
                         <p style="text-align: center;">
                             <ul>
-                                <li>Validity.id is a digital credential service leveraging blockchain to verify degrees.</li>
-                                <li>Designed AI course finder leveraging HuggingFace, OpenAI, and RAG</li>
-                                <li>Aided and assisted in design of Validity.id service</li>
-                            </ul> 
+                                <li>Partnered with a product designer to conceptualize and launch a capsule collection of business accessories, fueling brand innovation and elevating market presence.</li>
+                                <li>Executed brand-building strategies through targeted marketing campaigns and in-person events, driving measurable increases in audience engagement.</li>
+                                <li>Orchestrated collaborations with leading streetwear brands, introducing new revenue streams and expanding product offerings.</li>
+                                <li>Initiated and cultivated sponsor relationships, managing full-cycle outreach and negotiation to enhance brand partnerships.</li>
+                                <li>Developed innovative graphic designs and managed social media content, boosting audience interaction and brand awareness.</li>
+                                <li>Leveraged data-driven insights to optimize Boardroom/35 Ventures accounts, refining content strategies and improving overall performance.</li>
+                            </ul>
                         </p><br>
                     </div>
                 </div>
+
+                <!-- 2nd Experience -->
                 <div class="grid-item">
                     <div class="edu">
-                        <h3 style="text-align: center; margin-bottom: 46px;">Business Development Intern @ Founder's Table</h3>
-                        <h4 style="text-align: center;">New York, NY</h4>
-                        <h4 style="text-align: center;">Jul 2023 - Sep 2023</h4>
+                        <h3 style="text-align: center;">Creative Consultant @ Lift Sports Management</h3>
+                        <h4 style="text-align: center;">Jan 2022 - Sep 2023</h4>
                         <p style="text-align: center;">
                             <ul>
-                                <li>Beta tested and worked alongside the software engineering team to develop new generation software to upload quality control checks automatically.</li>
-                                <li>Learned the entire business model ranging from operations, supply chain management to accounting.</li>
-                                <li>Interacted with suppliers to manage contracts to combat inflation and its impact on COGS.</li>
-                            </ul> 
+                                <li>Designed official athletic apparel worn by professional and collegiate athletes.</li>
+                                <li>Collaborated with agents and brand representatives to secure marketing deals and sponsorships for clients.</li>
+                                <li>Curated social media content to amplify client brand presence and fan engagement.</li>
+                                <li>Provided general management support to an NBA player and collegiate athletes, ensuring seamless day-to-day operations.</li>
+                            </ul>
                         </p><br>
                     </div>
                 </div>
             </div>
+
             <div class="grid-container">
+                <!-- 3rd Experience -->
                 <div class="grid-item">
                     <div class="edu" style="margin-top: -20px;">
                         <br>
-                        <h3 style="text-align: center;">Quantitative Analyst Intern @ Kiski Financial Group</h3>
-                        <h4 style="text-align: center;">New York, NY</h4>
-                        <h4 style="text-align: center;">Jul 2022 - Oct 2022</h4>
+                        <h3 style="text-align: center;">Social Media Intern @ Invisible Hands Deliver</h3>
+                        <h4 style="text-align: center;">Grade 11 - 12</h4>
                         <p style="text-align: center;">
                             <ul>
-                                <li>Responsible for the creation and development of financial reports (Correlation matrices, portfolio dispersions, etc)</li>
-                                <li>Interacted with company databases using SQL to utilize PowerBI and Tableau tooling. </li>
-                                <li>Designed and built software using React.js and PowerBI to create a new generation client view.</li>
-                            </ul> 
+                                <li>Managed Facebook/Instagram platforms with 10,000+ collective followers to raise awareness and support for immunocompromised and high-risk New Yorkers.</li>
+                                <li>Conducted research, engaged in partnership outreach, and assisted with fundraising initiatives to maximize community impact.</li>
+                                <li>Coordinated volunteer deliveries in response to COVID-19, ensuring seamless communication and service for beneficiaries.</li>
+                            </ul>
                         </p><br>
                     </div>
                 </div>
+
+                <!-- 4th Experience -->
                 <div class="grid-item">
                     <div class="edu">
                         <br>
-                        <h3 style="text-align: center;">Software Engineer Intern @ Duke Office of Information and Technology</h3>
-                        <h4 style="text-align: center;">May 2022 - Jul 2022</h4>
-                        <p>
+                        <h3 style="text-align: center;">Intern @ Challenged Athletes Foundation</h3>
+                        <h4 style="text-align: center;">Grade 12</h4>
+                        <p style="text-align: center;">
                             <ul>
-                                <li>Developed and deployed Duke FixIt, interactive web application which allows staff and students to conveniently report issues in their dorm, classroom, etc. </li>
-                                <li>Interfaced with Facilities Management to create a system which seamlessly integrated with their existing systems and workflows.</li>
-                                <li>Utilized Ruby on Rails (Backend), React.js (Frontend), Docker, and Kubernetes.  </li>
-                            </ul> 
+                                <li>Engaged in weekly virtual sessions with special needs athletes, fostering inclusivity and supporting their athletic goals.</li>
+                                <li>Assisted with building a high school outreach program, helping to expand CAF’s mission among NYC youth.</li>
+                            </ul>
                         </p><br>
                     </div>
                 </div>
             </div>
         </div>
         <br>
+
     </body>
     <script defer src="../javascript/main.js"></script>
     <script defer src="../javascript/navMenu.js"></script>
