@@ -103,10 +103,10 @@ p {
 }
 
 .projs {
-    grid-column: 2 / 3; /* Center the Creative Portfolio in the middle column */
+    grid-column: 2 / 3; /* Center the projects in the middle column */
     display: flex;
     flex-direction: column; /* Stack the project containers vertically */
-    justify-content: flex-start; /* Align Creative Portfolio from the top */
+    justify-content: flex-start; /* Align projects from the top */
     align-items: center; /* Center-align items within each project block */
     margin-left: 13rem;
 }
