@@ -17,6 +17,12 @@
         margin: 20px auto;
         max-width: 800px;
       }
+
+      /* column variant for stacked media */
+      .project-container.column {
+        flex-direction: column;
+        text-align: center;
+      }
       
       .project-details {
         flex: 1;
@@ -31,12 +37,11 @@
       }
 
       .project-image {
-        width: 400px;
-        min-width: 150px;
+        width: 100%;
       }
 
       .project-image img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
         display: block;
         border-radius: 5px;
@@ -55,6 +60,7 @@
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 10px;
         margin-top: 15px;
+        width: 100%;
       }
 
       .image-grid img {
@@ -115,8 +121,8 @@
       </div>
 
       <!-- 2. Boardroom Members Club Collection -->
-      <div class="project-container">
-        <div class="project-details">
+      <div class="project-container column">
+        <div class="project-details" style="margin-right:0;">
           <h3>Boardroom Members Club Collection</h3>
           <ul>
             <li><strong>Pouches</strong>
@@ -142,17 +148,17 @@
             </li>
           </ul>
         </div>
-        <!-- Primary image for the collection -->
+        <!-- Main image -->
         <div class="project-image">
           <img src="../imgs/bags.png" alt="Boardroom Members Club Collection"/>
         </div>
-      </div>
-      <!-- Additional images grid for Boardroom Members Club Collection -->
-      <div class="image-grid" style="max-width:800px;">
-        <img src="../imgs/wallets.jpg" alt="Wallets Overview"/>
-        <img src="../imgs/wallet blue.jpg" alt="Blue Wallet"/>
-        <img src="../imgs/walletgreen.jpg" alt="Green Wallet"/>
-        <img src="../imgs/notebook.jpg" alt="Notebook"/>
+        <!-- Grid of additional images -->
+        <div class="image-grid">
+          <img src="../imgs/wallets.jpg" alt="Wallets Overview"/>
+          <img src="../imgs/walletblue.jpg" alt="Blue Wallet"/>
+          <img src="../imgs/walletgreen.jpg" alt="Green Wallet"/>
+          <img src="../imgs/notebook.jpg" alt="Notebook"/>
+        </div>
       </div>
 
       <!-- 3. Boardroom University Initiative -->
