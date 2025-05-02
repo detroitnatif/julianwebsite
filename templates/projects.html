@@ -42,12 +42,13 @@
         border-radius: 5px;
       }
 
-      /* 2x2 grid for wallet and notebook images, matching width of bags image */
+      /* 2x2 grid for wallet and notebook images, slightly smaller than bags image */
       .wallet-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
-        margin-top: 10px; /* space below bags image */
+        margin: 10px auto 0; /* space below bags image and auto‑center */
+        width: 85%; /* shrink grid to 85% of bags image width */
       }
 
       .wallet-grid img {
@@ -108,7 +109,6 @@
             </li>
           </ul>
         </div>
-        <!-- Replace the src below with your actual image path -->
         <div class="project-image">
           <img src="../imgs/hoodie.png" alt="Warren Lotas x Kevin Durant Capsule Collection"/>
         </div>
@@ -142,7 +142,6 @@
             </li>
           </ul>
         </div>
-        <!-- Image of bags and 2x2 grid of additional items -->
         <div class="project-image">
           <img src="../imgs/bags.png" alt="Boardroom Members Club Collection"/>
           <div class="wallet-grid">
@@ -184,3 +183,4 @@
     <script defer src="../javascript/navMenu.js"></script>
   </body>
 </html>
+
