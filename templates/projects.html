@@ -49,6 +49,21 @@
         align-items: center;
       }
 
+      /* Grid for additional images */
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      .image-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        display: block;
+      }
+
       /* Existing styling for the nav overlay (unchanged) */
       #pancakeMenu .overlay {
         /* your existing nav menu styles here */
@@ -127,10 +142,17 @@
             </li>
           </ul>
         </div>
-        <!-- Replace the src below with your actual image path -->
+        <!-- Primary image for the collection -->
         <div class="project-image">
           <img src="../imgs/bags.png" alt="Boardroom Members Club Collection"/>
         </div>
+      </div>
+      <!-- Additional images grid for Boardroom Members Club Collection -->
+      <div class="image-grid" style="max-width:800px;">
+        <img src="../imgs/wallets.jpg" alt="Wallets Overview"/>
+        <img src="../imgs/wallet blue.jpg" alt="Blue Wallet"/>
+        <img src="../imgs/walletgreen.jpg" alt="Green Wallet"/>
+        <img src="../imgs/notebook.jpg" alt="Notebook"/>
       </div>
 
       <!-- 3. Boardroom University Initiative -->
@@ -163,73 +185,3 @@
     <script defer src="../javascript/navMenu.js"></script>
   </body>
 </html>
-
-
-<!-- 
-<body>
-       
-    <span style="font-size:30px;cursor:url('../cursors/CursorsXP.cur'), auto;" onclick="openNav()">&#9776;</span>
-    <span style="float: right;" onclick="dark()"><img id="icon" style="height: 20px; width: 20px;cursor:url('../cursors/CursorsXP.cur'), auto;" src="imgs/moon.png"></span>
-    <h1>projects</h1>
-    <div class="content-container">
-
-  
-    <div class="projs1">
-        <div class="learn2cook" style="width: 300;padding: 10px;">
-            <h2>Learn2Cook</h2>
-            <p>OpenAI text-to-video generation</p>
-            <ul>
-                <li>Details: </li>
-                <ul>
-                    <li>GPT3.5, Stable Diffusion, and Whisper to generate content</li>
-                    <li>FFMPEG and CV2 video creation</li>
-                    <li>Building video diffusion model integration</li>
-                    <li>Learn a recipe or two!</li>
-                </ul>
-                <li><a href="https://github.com/detroitnatif/Text-to-Video/tree/main/videoCreation" target="_blank">GitHub</a></li>
-                <li><a href="https://learn2cook.streamlit.app" target="_blank">Demo</a></li>
-            </ul> 
-        </div>
-    </div>
-    <div class="projs1">
-        <div class="LakeshoreAI" style="width: 300;padding: 10px;">
-            <h2>LakeshoreAI</h2>
-            <p>Automotive Agent trained to aid car Mechanics</p>
-            <ul>
-                <li>Details: </li>
-                <ul>
-                    <li>Enabled by a finetuned GPT assisstant</li>
-                    <li>Webscraping Automotive Forums</li>
-                    <li>Transcribing YouTube videos for tutorials</li>
-                    <li>Inspired by my father, who owned an automotive shop, Lakeshore Tire & Auto, for 38 years</li>
-                </ul>
-                <li><a href="https://github.com/detroitnatif/LakeshoreAI" target="_blank">GitHub</a></li>
-                <li><a href="https://lakeshoreai.streamlit.app" target="_blank">Demo</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="projs1">
-        <div class="LLM-Transformer" style="width: 300;padding: 10px;">
-            <h2>Transformer</h2>
-            <p>Building a transformer from bare bones</p>
-            <ul>
-                <li>Details: </li>
-                <ul>
-                    <li>Neural Network implemented in vanilla Python</li>
-                    <li>Begin with basic MLP (multi-layer perceptron)</li>
-                    <li>Built out normalization, non-linearitly, and transformation layers</li>
-                    <li>implemented backpropogation algorithm</li>
-                    <li>Trained on a portion of Wikipedia!</li>
-                </ul>
-                <li><a href="https://github.com/detroitnatif/LLM-V1" target="_blank">GitHub</a></li>
-            </ul>
-        </div>
-        <div id="img-container" style="padding-right: 0px;">
-            <img src="../imgs/pokemontrainer.webp" alt="me" style="height:500px;">
-        </div>
-    </div>
-    </div>
-</body>
-<script defer src="../javascript/main.js"></script>
-<script defer src="../javascript/navMenu.js"></script>
-</html> -->
